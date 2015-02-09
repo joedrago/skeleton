@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.jdrago.skeleton"
+        version   = "0.1">
+
+    <name>Skeleton</name>
+
+    <description>
+        Game Skeleton for PhoneGap.
+    </description>
+
+    <author href="http://github.com/joedrago" email="joedrago@gmail.com">
+        Joe Drago
+    </author>
+
+    <content src="index.html" />
+    <access origin="*"/>
+
+    <preference name="permissions" value="none"/>
+
+    <preference name="orientation" value="landscape" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+
+    <icon src="www/images/icon.png" />
+</widget>

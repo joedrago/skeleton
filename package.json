@@ -1,0 +1,29 @@
+{
+  "name": "skeleton",
+  "description": "Game Skeleton for PhoneGap",
+  "keywords": [
+    "phonegap"
+  ],
+  "author": "Joe Drago",
+  "version": "0.0.1",
+  "license": "Boost",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "homepage": "http://github.com/joedrago/skeleton",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joedrago/skeleton.git"
+  },
+  "scripts": {
+    "build": "browserify  -t coffeeify -r ./src/boot.coffee:boot -r ./src/engine.coffee:engine -o www/js/bundle.js",
+    "watch": "watchify -v -t coffeeify -r ./src/boot.coffee:boot -r ./src/engine.coffee:engine -o www/js/bundle.js"
+  },
+  "dependencies": {
+    "browserify": "*",
+    "coffeeify": "*",
+    "minifyify": "*",
+    "watchify": "*",
+    "coffee-script": "*"
+  }
+}
